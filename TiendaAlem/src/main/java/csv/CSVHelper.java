@@ -48,6 +48,9 @@ public class CSVHelper {
 
       List<Productos> productosList = new ArrayList<>();
       Iterable<CSVRecord> csvRecords = csvParser.getRecords();//Se optiene el valor de cada registro
+      System.out.println(csvRecords.getClass());
+
+            
       List<String> list = getListFromIterator(((List<CSVRecord>) csvRecords).get(0).iterator());
       System.out.println("Lista cosa 1: "+list.get(0));
       System.out.println("Records: "+csvRecords);

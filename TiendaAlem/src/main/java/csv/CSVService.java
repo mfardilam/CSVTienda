@@ -20,7 +20,7 @@ public class CSVService {
     try {
     	System.out.println("estoy intentando leer el archivo - services");
       List<Productos> productos = CSVHelper.csvProductos(file.getInputStream());
-      repository.saveAll(productos);
+      //repository.saveAll(productos);
       System.out.println("este: "+productos.get(1));
       System.out.println("lei el archivo services");
     } catch (IOException e) {

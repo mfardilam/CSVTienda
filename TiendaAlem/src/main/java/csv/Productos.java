@@ -32,7 +32,9 @@ public class Productos {
 	private double preciov;
 	
 	
-	
+	public Productos() {
+		super();
+	}
 
 	public Productos(int id, int codigo, String nombre, int nitp, double precioc, double iva, double preciov) {
 		super();
